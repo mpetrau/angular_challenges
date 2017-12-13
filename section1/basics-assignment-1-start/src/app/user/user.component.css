@@ -8,3 +8,18 @@ button:disabled{
   padding: 2px;
   background-color: grey;
 }
+
+.white{
+  color:white;
+}
+
+li {
+  list-style: none;
+}
+
+.details {
+  background-color: lightgrey;
+  border: grey;
+  padding: 5px 10px;
+  margin: 15px;
+}

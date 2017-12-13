@@ -3,4 +3,17 @@
   <input [(ngModel)]="username">
   <button (click)="resetUsername()" [disabled]="!username">Reset name</button>
 </div>
-<p>Username is <span>{{ username }}</span></p>
+<br>
+<h3>Username is <span>{{ username }}</span></h3>
+<button id="displayDetails" (click)='displayDetails($event)'>Details</button>
+<br>
+<p *ngIf="passwordHidden" class="details">The super secret password is "oheyeoh</p>
+<br>
+<div *ngIf="log.length">
+  <h5>the events log</h5>
+  <ul *ngFor="let item of log; let i = index ">
+    <li [ngStyle]="(i > 3) && {backgroundColor: 'blue'}"
+      [ngClass]="{white: i > 3}">{{ item }}</li>
+  </ul>
+</div>
+
