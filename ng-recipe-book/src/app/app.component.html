@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-recipes *ngIf="currentPage === 'recipes'"></app-recipes>
+      <app-recipes *ngIf="currentPage !== 'shopping-list'"></app-recipes>
       <app-shopping-list *ngIf="currentPage === 'shopping-list'"></app-shopping-list>
     </div>
   </div>
