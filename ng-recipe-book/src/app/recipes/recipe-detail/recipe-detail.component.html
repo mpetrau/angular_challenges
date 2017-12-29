@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col">
     <div class="card">
-      <img class="card-img-top" src="http://cdn-image.myrecipes.com/sites/default/files/styles/420x420/public/image/recipes/sl/03142008/chicken-salad-sl-521176-x.jpg?itok=m1m0du1o" alt="Card image cap">
+      <img class="card-img-top" [src]=recipe.imagePath alt="{{ recipe.name }} picture">
       <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h4 class="card-title">{{ recipe.name }}</h4>
+        <p class="card-text">{{ recipe.description }}.</p>
         <a href="#" class="card-link btn btn-primary">Add to buy</a>
         <a href="#" class="card-link">Edit</a>
         <a href="#" class="card-link">Remove</a>

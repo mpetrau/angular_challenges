@@ -1,4 +1,4 @@
-<div class="card mb-3" [ngStyle]="{'background-image': 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(' + recipe.imagePath + ')'}" >
+<div class="card mb-3" [ngStyle]="{'background-image': 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(' + recipe.imagePath + ')'}" (click)="onRecipeSelect()">
   <div class="card-description">
     <h2>{{ recipe.name }}</h2>
     <p>{{ recipe.description }}</p>
