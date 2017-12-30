@@ -7,7 +7,7 @@ import { CounterService } from './counter.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements DoCheck {
   activeCount:number = 0;
   inactiveCount:number = 0;
 
