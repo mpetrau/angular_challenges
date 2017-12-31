@@ -1,9 +1,9 @@
 <div class="row my-3">
   <div class="col-md">
-    <app-recipe-list (passedSelectedRecipe)="recipe = $event"></app-recipe-list>
+    <app-recipe-list></app-recipe-list>
   </div>
   <div class="col-md">
-    <app-recipe-detail *ngIf="recipe; else infoText" [recipeDetail]="recipe"></app-recipe-detail>
+    <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipeDetail]="selectedRecipe"></app-recipe-detail>
     <ng-template #infoText>
       <p>Please select a recipe!</p>
     </ng-template>
