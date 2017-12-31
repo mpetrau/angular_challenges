@@ -6,7 +6,7 @@
         <h4 class="card-title">{{ recipe.name }}</h4>
         <p class="card-text">{{ recipe.description }}.</p>
         <div class="btn-group">
-          <button type="button" class="btn btn-primary">Add to Buy</button>
+          <button type="button" class="btn btn-primary" (click)="addToShoppingList()" >Add to Buy</button>
           <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown>
             <span class="sr-only">Toggle Dropdown</span>
           </button>
